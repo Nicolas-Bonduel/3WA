@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
     <script type="module" src="index.js"></script>
 </head>
 <body>
-    <h1>Hello Folks ~~</h1>
+
+    <h1 class="disclaimer">Hello Folks ~~</h1>
+
+    <div id="todolist">
+        <div class="header">
+            <div class="check">
+                <p>done?</p>
+                <img class="arrow-down" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg">
+                <img style="display: none" class="arrow-up" src="https://www.svgrepo.com/show/93813/up-arrow.svg">
+            </div>
+            <div class="title-desc">
+                <p>title & description</p>
+                <img class="arrow-down" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg">
+                <img style="display: none" class="arrow-up" src="https://www.svgrepo.com/show/93813/up-arrow.svg">
+            </div>
+            <div class="date">
+                <p>due date</p>
+                <img class="arrow-down" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg">
+                <img style="display: none" class="arrow-up" src="https://www.svgrepo.com/show/93813/up-arrow.svg">
+            </div>
+            <div class="priority">
+                <p>priority</p>
+                <img class="arrow-down" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg">
+                <img style="display: none" class="arrow-up" src="https://www.svgrepo.com/show/93813/up-arrow.svg">
+            </div>
+            <div class="delete">
+                <p>delete</p>
+            </div>
+        </div>
+
+        <!-- content -->
+        
+        <div class="add">
+            <div class="add-btn">
+                <img src="data:image/png;base64,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">
+            </div>
+            <div class="header">
+                <input class="title" type="text" placeholder="title">
+                <textarea class="desc" placeholder="description"></textarea>
+            </div>
+            <div class="date-wrapper">
+                <input class="date" type="date" placeholder="due date">
+            </div>
+            <div class="priority-wrapper">
+                <select class="priority">
+                    <option default value="" disabled selected hidden>priority</option>
+                    <option value="not urgent">not urgent</option>
+                    <option value="normal">normal</option>
+                    <option value="urgent">urgent</option>
+                </select>
+            </div>
+            <div class="check-placeholder"></div>
+        </div>
+    </div>
+
+
 </body>
 </html>

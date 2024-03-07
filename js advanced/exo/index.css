@@ -1,0 +1,284 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.disclaimer {
+    width: 100%;
+    text-align: center;
+}
+
+
+#todolist {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+#todolist > .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+#todolist > .header > div {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#todolist > .header .arrow-down, #todolist > .header .arrow-up {
+    width: 20px;
+}
+#todolist > .header .arrow-down:hover, #todolist > .header .arrow-up:hover {
+    cursor: pointer;
+}
+
+#todolist > .header > .check {
+    width: 5%;
+}
+
+#todolist > .header > .title-desc {
+    width: 50%;
+}
+
+#todolist > .header > .date {
+    width: 20%;
+}
+
+#todolist > .header > .priority {
+    width: 20%;
+}
+
+#todolist > .header > .delete {
+    width: 5%;
+}
+
+#todolist > .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+#todolist > .row > .check {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todolist > .row > .header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: .5%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+#todolist > .row > .header > .title {
+    display: inline-flex;
+    align-items: center;
+}
+
+#todolist > .row > .header > .title > p {
+    font-weight: bold;
+}
+#todolist > .row > .header > .title > input {
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+#todolist > .row > .header > .title > img.edit {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .header > .title > img.edit:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .header > .title > img.save {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .header > .title > img.save:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .header > .desc {
+    display: inline-flex;
+    align-items: center;
+}
+
+#todolist > .row > .header > .desc > p {
+    font-style: italic;
+}
+#todolist > .row > .header > .desc > input {
+    width: 80%;
+}
+
+#todolist > .row > .header > .desc > img.edit {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .header > .desc > img.edit:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .header > .desc > img.save {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .header > .desc > img.save:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .date {
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+#todolist > .row > .date > p {
+    text-align: center;
+}
+
+#todolist > .row > .date > img.edit {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .date > img.edit:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .date > img.save {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .date > img.save:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .priority {
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+#todolist > .row > .priority > p {
+    text-align: center;
+}
+
+#todolist > .row > .priority > img.edit {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .priority > img.edit:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .priority > img.save {
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#todolist > .row > .priority > img.save:hover {
+    cursor: pointer;
+}
+
+#todolist > .row > .delete {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todolist > .row > .delete > img {
+    max-width: 30%;
+    max-height: 30%;
+}
+#todolist > .row > .delete > img:hover {
+    cursor: pointer;
+}
+
+
+#todolist > .add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+}
+
+#todolist > .add > .check-placeholder {
+    width: 5%;
+}
+
+#todolist > .add > .header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: .5%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+#todolist > .add > .header > .title {
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+#todolist > .add > .header > .desc {
+    width: 80%;
+}
+
+#todolist > .add > .date-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+#todolist > .add > .date-wrapper > .date {
+
+}
+
+#todolist > .add > .priority-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+#todolist > .add > .add-btn {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todolist > .add > .add-btn > img {
+    max-width: 40%;
+    max-height: 40%;
+}
+#todolist > .add > .add-btn > img:hover {
+    cursor: pointer;
+}
