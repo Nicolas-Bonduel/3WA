@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             let msg_encoded = Base64Encoder.encode(msg);
     
-            secret_msg_link.innerHTML = window.location.origin + "/index.html#" + msg_encoded;
+            secret_msg_link.innerHTML = window.location.origin + window.location.pathname + "#" + msg_encoded;
             inner_create_section.style.display = "none";
             share_section.style.display = "flex";
         });
