@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
             let msg_encoded = Base64Encoder.encode(msg);
     
-            secret_msg_link.innerHTML = window.location.origin + window.location.pathname + "#" + msg_encoded;
+            //secret_msg_link.innerHTML = window.location.origin + window.location.pathname + "#" + msg_encoded;
+            secret_msg_link.innerHTML = new URL(window.location.origin + window.location.pathname + "#" + msg_encoded).toString();
             inner_create_section.style.display = "none";
             share_section.style.display = "flex";
         });
@@ -108,7 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         create_section.style.display = "none";
         view_section.style.display = "block";
 
-        let hash = window.location.hash.slice(1);
+        //let hash = window.location.hash.slice(1);
+        let hash = (new URL(window.location.href).hash).slice(1);
         let msg_decoded = Base64Encoder.decode(hash);
 
         secret_msg_decoded.innerHTML = msg_decoded;
